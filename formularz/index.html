@@ -6,6 +6,39 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form action="https://formspree.io/f/mwkwzedw" method="POST">
+        <label for="name">Imię:</label><br>
+        <input type="text" name="name" id="name" placeholder="Imię"><br><br>
+
+        <label for="surname">Nazwisko:</label><br>
+        <input type="text" name="surname" id="surname" placeholder="Nazwisko"><br><br>
+
+        <label for="mail">E-mail:</label><br>
+        <input type="email" name="mail" id="mail" placeholder="E-mail"><br><br>
+
+        <label for="phone">Numer telefonu:</label><br>
+        <input type="tel" name="phone" id="phone" placeholder="Numer telefonu"><br><br>
+
+        <label for="city">Miasto:</label>
+        <select id="city" name="city">
+            <option value="cracow">Kraków</option>
+            <option value="warsaw">Warszawa</option>
+            <option value="gdansk">Gdańsk</option>
+        </select><br><br>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Kobieta</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Mężczyzna</label><br><br>
+
+        <input type="checkbox" id="personal-data-approval" name="personal-data-approval" value="yes">
+        <label for="personal-data-approval">Wyrażam zgodę na przetwarzanie dancyh osobowych.</label><br><br>
+             
+        <label for="message">Wiadomość:<br></label>
+        <textarea maxlength="1000" name="message" id="message" placeholder="Wiadomość"></textarea>
+        <br>
+
+        <input type="submit" value="Wyślij" >
+    </form>
 </body>
 </html>
