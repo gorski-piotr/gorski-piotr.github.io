@@ -1,0 +1,66 @@
+td,
+tr,
+table {
+    border-collapse: collapse;
+    border: none;
+    margin: 0;
+    padding: 2px;
+}
+
+.inner-box {
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+.inner-circle {
+    border: solid 2px black;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+/************** COLORS **************/
+
+.red {
+    background-color: red;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.green {
+    background-color: green;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.black {
+    background-color: black;
+}
+
+.orange {
+    background-color: orange;
+}
