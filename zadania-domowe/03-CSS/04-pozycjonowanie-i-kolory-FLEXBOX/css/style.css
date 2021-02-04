@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+.outer-box {
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+/*     justify-content: space-around;
+    align-content: space-around; */
+/* powyzej bylo uzyte gdy inner-box mial size 33%x33% więc pozostaly 1% 
+zostal uzyty jako stworzenie borderów pomiedzy kwadratami. Ale border solix 2px wyglada lepiej */
+
+}
+
+.inner-box {
+    height: 33.33%;
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
+
+.circle {
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+
+/************** COLORS **************/
+
+.red {
+    background-color: red;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.green {
+    background-color: green;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.black {
+    background-color: black;
+}
+
+.orange {
+    background-color: orange;
+}

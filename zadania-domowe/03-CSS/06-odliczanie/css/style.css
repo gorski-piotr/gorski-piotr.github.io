@@ -1,0 +1,60 @@
+@keyframes countdown {
+    0% {
+        content: "10";
+        }
+
+    10% {
+        content: "9";
+        }
+
+    20% {
+        content: "8";
+    }
+
+    30% {
+        content: "7";
+    }
+
+    40% {
+        content: "6";
+    }
+
+    50% {
+        content: "5";
+    }
+
+    60% {
+        content: "4";
+    }
+
+    70% {
+        content: "3";
+    }
+
+    80% {
+        content: "2";
+    }
+
+    90% {
+        content: "1";
+    }
+
+    100% {
+       content: "I love CSS!";
+    }
+}
+
+.countdown {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.countdown:after {
+    animation-delay: 1s;
+    content: "10";
+    animation-name: countdown;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    font-size: 300px;
+}
