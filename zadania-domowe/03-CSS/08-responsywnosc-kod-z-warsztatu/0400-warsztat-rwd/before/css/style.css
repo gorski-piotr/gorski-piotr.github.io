@@ -13,14 +13,14 @@ h2 {
 }
 
 #gallery {
-	width: 90%;
+	width: 1024px;
 	margin: 0 auto;
 	text-align: center;
 }
 
 figure {
 	display: inline-block;
-	width: 33%;
+	width: 338px;
 	margin: 0;
 	margin-bottom: 10px;
 }
@@ -32,29 +32,4 @@ figure figcaption {
 figure img{
 	width: 100%;
 	border: 2px solid #444;
-}
-
-/* @media (min-width: 992px) {
-
-} */
-
-@media (max-width: 992px) {
-	
-	figure {
-		width: 49%;
-		
-	}
-}
-
-@media (max-width: 768px) {
-	figure {
-		width: 100%;
-	}
-}
-
-@media (max-width: 480px) {
-	#gallery {
-		width: 100%;
-	}
-
 }

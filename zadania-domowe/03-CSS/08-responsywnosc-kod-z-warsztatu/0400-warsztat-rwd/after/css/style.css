@@ -34,27 +34,21 @@ figure img{
 	border: 2px solid #444;
 }
 
-/* @media (min-width: 992px) {
-
-} */
-
-@media (max-width: 992px) {
-	
+@media screen and (max-width: 992px) {
 	figure {
 		width: 49%;
-		
 	}
 }
 
-@media (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
 	figure {
 		width: 100%;
 	}
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
 	#gallery {
 		width: 100%;
 	}
-
 }
