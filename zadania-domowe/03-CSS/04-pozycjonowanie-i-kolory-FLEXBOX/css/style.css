@@ -7,6 +7,7 @@
     width: 600px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
 /*     justify-content: space-around;
     align-content: space-around; */
 /* powyzej bylo uzyte gdy inner-box mial size 33%x33% więc pozostaly 1% 
@@ -16,7 +17,8 @@ zostal uzyty jako stworzenie borderów pomiedzy kwadratami. Ale border solix 2px
 
 .inner-box {
     height: 33.33%;
-    width: 33.33%;
+    flex-basis: 33.33%; /* flex-direction: row; = width */
+
     display: flex;
     justify-content: center;
     align-items: center;
