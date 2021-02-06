@@ -55,6 +55,6 @@
     animation-name: countdown;
     animation-duration: 11s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    /* animation-timing-function: ease-in-out; */
     font-size: 300px;
 }
