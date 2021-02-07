@@ -1,0 +1,140 @@
+/* Base styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+hr {
+    width: 70px;
+    border: 1px solid #007bff;
+    border-bottom: 0;
+    margin: 0 auto;
+}
+
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+    border: 1px solid #007bff;
+    padding: 14px 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+    /* margin: 40px auto; */
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #007bff;
+    color: white;
+} 
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 120px 0;
+    text-align: center;
+}
+
+.section-header {
+    margin-bottom: 75px;
+}
+
+.section-header h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+
+/* HEADER */
+.main-header {
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header-content {
+    text-align: center;
+}
+
+.main-header-content h1 {
+    font-size: 4.2em;
+    color: #007bff;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.main-header-content p {
+    color: #333;
+    font-size: 1.3em;
+    margin: 30px 0;
+}
+
+.main-header-content span {
+    color: #007bff;
+}
+
+
+/* NAVIGATION */
+.main-nav {
+    background-color: #007bff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    transition: all 0.2s;
+    padding: 20px 14px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    background-color: white;
+    color: #007bff;
+
+}
+
+
+/* SECTION ABOUT */
+
+.about .about-photo {
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    /* margin: 10px auto; */
+}
+
+.about p {
+    max-width: 700px;
+    margin: 20px auto 20px auto;
+    color: #777;
+    line-height: 1.4;
+}
