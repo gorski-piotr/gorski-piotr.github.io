@@ -26,8 +26,9 @@ hr {
     padding: 14px 20px;
     transition: all 0.3s;
     cursor: pointer;
-    /* margin: 40px auto; */
     display: inline-block;
+    margin: auto;
+    background-color: transparent;
 }
 
 .btn:hover {
@@ -200,4 +201,56 @@ section {
 .portfolio-wrapper .portfolio-item .hidden-text:hover {
     opacity: 1;
     
+}
+
+/* SECTION CONTACT */
+
+.contact-form {
+    margin: 0 auto;
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-form #name,
+.contact-form #email {
+    padding: 10px;
+    width: 49%;
+}
+
+.contact-form #message {
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.social-links {
+    margin-top: 50px;
+}
+
+.social-link {
+    font-size: 2.5em;
+    margin: 0 20px;
+    color: #007bff;
+    transition: all 0.5s;
+}
+
+.social-link:hover {
+    color: rgba(0, 123, 255, 0.5);
+}
+
+
+/* FOOTER */
+
+.main-footer {
+    background-color: #f2f1ed;
+    padding: 30px 0;
+}
+
+.main-footer p {
+    text-align: center;
+    color: 333;
+    font-size: 90%;
+    font-weight: 300;
 }
