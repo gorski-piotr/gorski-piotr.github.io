@@ -41,7 +41,7 @@ hr {
 }
 
 section {
-    padding: 120px 0;
+    padding: 60px 0;
     text-align: center;
 }
 
@@ -137,4 +137,67 @@ section {
     margin: 20px auto 20px auto;
     color: #777;
     line-height: 1.4;
+}
+
+
+/* SECTION PORTFOLIO */
+
+.portfolio {
+    background-color: #f2f1ed;
+}
+
+.portfolio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-wrapper .portfolio-item {
+    flex-basis: 25%;
+    /* height: 200px; */ /* robie tak zeby wysokosc sie sama dostosowywala */
+    position: relative; 
+    /* background-color: rgba(0, 123, 255, 0.4); */ /* background color set in new div.hidden-text (instead of h3 and fixed height) */
+
+}
+
+.portfolio-wrapper .portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+/* don't need it anymore as we hover new div.hidden-text */
+/* .portfolio-wrapper .portfolio-item img:hover {
+    opacity: 0.5;
+} */
+
+
+
+/* additional div.hidden-text to create a opacity effect */
+.portfolio-wrapper .portfolio-item .hidden-text {
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    /* background-color: #007bff; */
+    background-color: rgba(0, 123, 255, 0.6); /* 0.6 = opacity */
+    transition: all 0.5s
+}
+
+.portfolio-wrapper .portfolio-item .hidden-text h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 1;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.portfolio-wrapper .portfolio-item .hidden-text:hover {
+    opacity: 1;
+    
 }
