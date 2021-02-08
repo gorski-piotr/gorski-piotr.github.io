@@ -213,8 +213,8 @@ section {
     justify-content: space-between;
 }
 
-.contact-form #name,
-.contact-form #email {
+.contact-form input#name,
+.contact-form input#email {
     padding: 10px;
     width: 49%;
 }
