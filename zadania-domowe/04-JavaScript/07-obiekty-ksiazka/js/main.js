@@ -6,7 +6,7 @@ class Ksiazka {
     }
 
     czyPrzeczytana() {
-        if (this.przeczytana === true) {
+        if (this.przeczytana) {
             return "została przeczytana"
         } else {
             return "nie została przeczytana"
@@ -35,7 +35,7 @@ function iloscPrzeczytanych(tablicaKsiazek) {
     tablicaKsiazek.forEach( function(element) {
         console.log(element.opiszKsiazke());
 
-        if (element.przeczytana === true) {
+        if (element.przeczytana) {
             liczbaPrzeczytanych += 1;
         }
     }) 
