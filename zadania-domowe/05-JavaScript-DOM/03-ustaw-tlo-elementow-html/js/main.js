@@ -10,8 +10,13 @@ function setBackground() {
     let pierwszyParagraf = document.querySelector(".pierwszy");
     let drugiParagraf = document.querySelector(".drugi");
     
-    pierwszyParagraf.classList.add("bg-red");
+    pierwszyParagraf.classList.toggle("bg-red");
     drugiParagraf.classList.add("bg-yellow");
+
+
+
+    // pierwszyParagraf.classList.add("bg-red");
+    // drugiParagraf.classList.add("bg-yellow");
 
 
     // pierwszyParagraf.style.backgroundColor = "red";
