@@ -7,6 +7,29 @@
     <title>Document</title>
 </head>
 <body>
+    <form action="" id="newsletter-form" method="POST">
+    
+        <label for="full-name">Imię i nazwisko:</label><br>
+        <input type="text" name="full-name" id="full-name"><br><br>
+    
+        <label for="mail">E-mail:</label><br>
+        <input type="email" name="mail" id="mail"><br><br>
+    
+        <input type="checkbox" id="first-agree" name="first-agree">
+        <label for="first-agree">Wyrażam zgodę pierwszą.</label><br>
+    
+        <input type="checkbox" id="second-agree" name="second-agree">
+        <label for="second-agree">Wyrażam zgodę drugą.</label><br>
+    
+        <input type="checkbox" id="all-agree" name="all-agree">
+        <label for="all-agree">Wyrażam wszystkie zgody.</label><br><br>
+    
+        <input type="submit" id="newsletter-submit" value="Wyślij" >
+
+        <ul id="warnings"></ul>
+    
+    </form>
+    
     
     <script src="js/main.js"></script>
 </body>

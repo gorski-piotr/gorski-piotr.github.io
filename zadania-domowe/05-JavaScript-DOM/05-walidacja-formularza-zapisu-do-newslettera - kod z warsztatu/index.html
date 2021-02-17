@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WARSZTAT - Walidacja formularza zapisu do Newsletter'a</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <form action="" id="newsletter-form">
+
+        <ul id="errors"></ul>
+
+        <label for="name">Imie i nazwisko</label><br />
+        <input type="text" name="name" id="name" placeholder="Jan Nowak"><br />
+
+        <label for="email">Adres e-mail</label><br />
+        <input type="email" name="email" id="email" placeholder="jan@nowak.pl"><br />
+
+        <input type="checkbox" name="agree-1" id="agree-1"><br />
+        <label for="agree-1">Wyrażam zgodę - 1</label><br />
+
+        <input type="checkbox" name="agree-2" id="agree-2"><br />
+        <label for="agree-2">Wyrażam zgodę - 2</label><br />
+
+        <input type="checkbox" name="all-agree" id="all-agree"><br />
+        <label for="all-agree">Wyrażam wszystkie zgody</label><br />
+
+        <button type="submit" id="sign-up">Zapisz do Newsletter'a</button>
+    </form>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
