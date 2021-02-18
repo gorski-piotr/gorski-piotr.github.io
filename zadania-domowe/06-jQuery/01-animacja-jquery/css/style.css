@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.myDiv {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: relative;
+}
+
+.myButton {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
