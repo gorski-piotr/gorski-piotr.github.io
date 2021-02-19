@@ -12,12 +12,13 @@ $(function() {
     $(".main-menu-item a").click(function(event){
         event.preventDefault();
         console.log("link clicked");
+        console.log(event.target.href);
         $("body").fadeOut(2000, function() {
             // let hrefValue = $(".main-menu-item a").prop("href");
             let hrefValue = $(event.target).prop("href");
             // let hrefValue = $(event.target).attr("href");
             console.log(hrefValue);
-            window.location.href = hrefValue;
+           // window.location.href = hrefValue;
         });
     });
 });

@@ -51,7 +51,9 @@ const allAgree = (event) => {
 
     agree1.disabled = event.target.checked;
     agree2.disabled = event.target.checked;
+
 }
 
 newsletterForm.addEventListener('submit', validate);
 allAgreeChx.addEventListener('change', allAgree);
+

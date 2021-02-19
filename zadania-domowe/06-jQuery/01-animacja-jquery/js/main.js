@@ -8,7 +8,7 @@ $( function() {
                 $(this).animate({
                     backgroundColor: "#0000FF"
                 }, 5000, function(){
-                    $(this).html("<h2>Animacja zakonczona</h2>").css("color", "white").css("font-size", "0.8em");
+                    $(this).html("<h2>Animacja zakonczona</h2>").css({"color": "white", "font-size": "0.8em"});
                 });
         });
       });
