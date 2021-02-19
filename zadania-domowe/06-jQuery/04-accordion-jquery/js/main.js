@@ -13,6 +13,7 @@ $( function() {
         $(".content3").slideToggle();
         $(this).toggleClass("pressed")
     });
+    
     $(".item4").click( function() {
         $(".content4").slideToggle();
         $(this).toggleClass("pressed")
