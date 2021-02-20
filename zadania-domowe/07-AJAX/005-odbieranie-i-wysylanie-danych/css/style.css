@@ -1,0 +1,7 @@
+ul#errors li {
+    color: red;
+}
+
+p#msg {
+    color: green;
+}
