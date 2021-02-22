@@ -20,6 +20,7 @@ const getData = () => {
         })
         .catch((error) => {
             console.error('Error:', error);
+            alert("blad");
         });
 }
 

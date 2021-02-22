@@ -27,9 +27,10 @@ let divDaneProgramisty = document.getElementById("dane-programisty");
 
 const downloadData = () => {
     $(function() {
-        $.getJSON("https://akademia108.pl/kurs-front-end/ajax/1-pobierz-dane-programisty.php", function(data) {
-            console.log(data);
-            divDaneProgramisty.innerText = `Imie: ${data.imie},\nNazwisko: ${data.nazwisko},\nZawód: ${data.zawod},\nFirma: ${data.firma}.`
+        $.get("https://akademia108.pl/kurs-front-end/ajax/1-pobierz-dane-programisty.php", function(data) {
+            let jsonData = JSON.parse(data);
+            console.log(jsonData);
+            divDaneProgramisty.innerText = `Imie: ${jsonData.imie},\nNazwisko: ${jsonData.nazwisko},\nZawód: ${jsonData.zawod},\nFirma: ${jsonData.firma}.`
             //divDaneProgramisty.textContent = `Imie: ${data.imie},\nNazwisko: ${data.nazwisko},\nZawód: ${data.zawod},\nFirma: ${data.firma}.`
             //$("#dane-programisty").text(`Imie: ${data.imie},\nNazwisko: ${data.nazwisko},\nZawód: ${data.zawod},\nFirma: ${data.firma}.`);
             // document.getElementById("dane-programisty").innerText = `Imie: ${data.imie},\nNazwisko: ${data.nazwisko},\nZawód: ${data.zawod},\nFirma: ${data.firma}.`
