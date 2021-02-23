@@ -1,0 +1,16 @@
+.btn {
+    color: orange;
+}
+
+.btn:hover {
+    color: grey;
+}
+
+h2 {
+    color: grey;
+    font-weight: 300;
+}
+
+.card-body {
+    color: grey;;
+}
