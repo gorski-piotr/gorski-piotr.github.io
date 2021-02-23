@@ -14,3 +14,7 @@ h2 {
 .card-body {
     color: grey;;
 }
+
+.btn:focus {
+    box-shadow: none;
+}
