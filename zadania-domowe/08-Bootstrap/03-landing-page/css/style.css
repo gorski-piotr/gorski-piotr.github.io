@@ -3,8 +3,28 @@
     height: auto;
 }
 
-.img-form-size {
-    /* width: 100%;
-    height: 200px; */
+@media (min-width: 768px) {
+    .dom-1 {
+        order: 1;
+    }
 
+    .dom-2 {
+        order: 2;
+    }
+
+    .dom-3 {
+        order: 4;
+    }
+
+    .dom-4 {
+        order: 3;
+    }
+
+    .dom-5 {
+        order: 5;
+    }
+
+    .dom-6 {
+        order: 6;
+    }
 }
