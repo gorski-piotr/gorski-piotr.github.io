@@ -31,7 +31,6 @@
 
 .item {
     height: 200px;
-    
 }
 .item img {
     width: 100%;
@@ -41,7 +40,6 @@
 
 .form {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/slider-1.jpg);
-    
 }
 
 .form h3 {
