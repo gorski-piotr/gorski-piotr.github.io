@@ -5,26 +5,45 @@
 
 @media (min-width: 768px) {
     .dom-1 {
-        order: 1;
-    }
-
-    .dom-2 {
         order: 2;
     }
 
-    .dom-3 {
-        order: 4;
+    .dom-2 {
+        order: 1;
     }
 
-    .dom-4 {
+    .dom-3 {
         order: 3;
     }
 
+    .dom-4 {
+        order: 4;
+    }
+
     .dom-5 {
-        order: 5;
+        order: 6;
     }
 
     .dom-6 {
-        order: 6;
+        order: 5;
     }
+}
+
+.item {
+    height: 200px;
+    
+}
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/slider-1.jpg);
+    
+}
+
+.form h3 {
+    color: white;
 }
