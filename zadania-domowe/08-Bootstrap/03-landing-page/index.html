@@ -74,43 +74,35 @@
 
    <!-- 3 BOXES SECTION -->
 
-    <div class="bg-light py-5">
-        <div class="container">
+    <section class="bg-light">
+        <div class="container text-center">
             <div class="row justify-content-around">
-                <div class="col-md-4 col-12">
-                    <div class="text-center">
-                        <h3>Fully responsive</h3>
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, sunt.</p>
-                    </div>
+                <div class="col-md-4 service-item">
+                  <h3>Fully responsive</h3>
+                  <p class="lead mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, sunt.</p>
                 </div>
-                <div class="col-md-4 col-12">
-                    <div class="text-center">
-                        <div class="text-center">
-                            <h3>Bootstrap 4 Ready</h3>
-                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, sunt.</p>
-                        </div>
-                    </div>
+                <div class="col-md-4 service-item">
+                      <h3>Bootstrap 4 Ready</h3>
+                      <p class="lead mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, sunt.</p>
                 </div>   
-                <div class="col-md-4 col-12">
-                    <div class="text-center">
-                        <h3>Easy to Use</h3>
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
+                <div class="col-md-4 service-item">
+                      <h3>Easy to Use</h3>
+                      <p class="lead mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>  
             </div>
         </div>
-    </div>
+    </section> 
 
 
     <!-- 6 BOXES SECTION -->
 
-    <div class="container-fluid">
+    <section class="container-fluid py-0">
       <div class="row">
             <div class="col-md-6 dom-1 item px-0">
-                <img src="img/view-1.jpg" class="img-fluid px-0" alt="View 1">
+                <img src="img/view-1.jpg" class="img-fluid" alt="View 1">
             </div>
 
-            <div class="col-md-6 dom-2 item p-4">
+            <div class="col-md-6 dom-2 item px-4">
                 <h3>Fully responsive</h3>
                 <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste deleniti ab sit accusamus necessitatibus optio magni officiis dolores alias delectus.</p>
             </div>
@@ -133,26 +125,26 @@
                 <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste deleniti ab sit accusamus necessitatibus optio magni officiis dolores alias delectus.</p>
             </div>
       </div>
-    </div>
+    </section>
 
 
     <!-- OUR TEAM-->
 
-    <section class="bg-light py-5">
+    <section class="bg-light">
         <div class="container text-center">
             <h2>Our team</h2>
             <div class="row justify-content-around py-3">
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 team-item text-center">
                     <img src="img/team-1.jpg" class="team-img-size rounded-circle mb-3" alt="Team 1">
                     <h6>Maragret E.</h6>
                     <p class="lead">SEO</p>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 team-item text-center">
                     <img src="img/team-2.jpg" class="team-img-size rounded-circle mb-3" alt="Team 2">
                     <h6>Fred S.</h6>
                     <p class="lead">CTO</p>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 team-item text-center">
                     <img src="img/team-3.jpg" class="team-img-size rounded-circle mb-3" alt="Team 3">
                     <h6>Sarah W.</h6>
                     <p class="lead">Designer</p>
@@ -167,10 +159,19 @@
 
     
     <form class="form p-5 text-center">
-      <h3>Ready to get started? Sign up now!</h3>
-      <label for="newsletterEmail" class="form-label"></label>
-    <input type="email" class="" id="newsletterEmail">
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <h3 class="mb-4">Ready to get started? Sign up now!</h3>
+
+      <div class="row mb-2 w-75 mx-auto">
+        
+        <div class="col-md-9 mb-2">
+          <input type="email" class="form-control" id="colFormLabel" placeholder="E-mail">
+          
+        </div>
+        <div class="col-md-3">
+          <button type="submit" class="btn btn-block btn-primary">Submit</button>
+        </div>
+      </div>
+  
     </form>
    
 
@@ -178,7 +179,7 @@
     <!-- FOOTER -->
 
     <footer class="bg-light text-center py-3">
-      <p class="lead">Copyright PG. All rights reserved.</p>
+      <p class="lead text-muted"><small>Copyright PG. All rights reserved.</small></p>
     </footer>
 
 
