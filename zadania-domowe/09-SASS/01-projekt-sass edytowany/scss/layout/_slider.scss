@@ -48,13 +48,14 @@
 
 		p, h1 {	
 			color: $color-text-primary;
-			text-transform: capitalize;
+			text-transform: uppercase;
 		}
 
 		h1 {
-			font-size: $base-font-size + 32;
+			font-size: $base-font-size + 22;
 			margin-top: $baseline;
 			margin-bottom: $baseline;
+			letter-spacing: 4px;
 		}
 
 		p {
@@ -63,8 +64,8 @@
 		}
 
 		.btn-primary {
-			margin-top: $baseline * 2;
-			font-size: $base-font-size - 2;
+			margin-top: $baseline;
+			font-size: $base-font-size + 6;
 			padding: 10px 12px;
 		}
 	}

@@ -9,10 +9,17 @@ hr {
 }
 
 hr.divider-light-dark {
-    max-width: $baseline * 3.3;
+    max-width: 150px; //$baseline * 3.3; //edited because of project requirements
     border-color: $color-primary;
     border-width: 3px;
 }
+
+// //added because of project requirements:
+// .counters-box hr.divider-light-dark {
+//     max-width: 25px;
+//     opacity: 0.5;
+// }
+// // edit finished
 
 hr.divider-light {
     border-color: $color-bg-main;

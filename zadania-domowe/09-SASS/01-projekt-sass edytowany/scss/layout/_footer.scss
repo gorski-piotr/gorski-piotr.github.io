@@ -5,7 +5,7 @@
 	background-color: $color-footer;
 
 	.footer-above {
-		padding-top: $baseline * 2;
+		padding-top: 80px; //$baseline * 2;
 
 		.margin-none {
 
@@ -71,5 +71,11 @@
 
 	p {
 		color: $color-text-light;
+	}
+
+	.footer-below {
+		.btn-social {
+			font-size: 25px;
+		}
 	}
 }

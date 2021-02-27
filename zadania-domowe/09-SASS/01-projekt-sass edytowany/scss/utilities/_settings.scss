@@ -11,8 +11,8 @@
 //    Typography 
 // -------------------
 	$base-font-size: 16px;
-	$font-primary: "Lato Regular", Helvetica, sans-serif;
-	$font-secondary: "Lato Bold", Helvetica, sans-serif;
+	$font-primary: "Raleway", Helvetica, sans-serif;
+	$font-secondary: "Archivo Black", Helvetica, sans-serif;
 	$text-transform-base: uppercase;
 	$baseline: $base-font-size * 1.5;
 
@@ -23,10 +23,10 @@
 //    Colors Scheme 
 // -------------------
 	// Main colors
-	$color-primary: #2eb6d1;
-	$color-primary-rgb: rgb(46,182,209);
-	$color-primary-darker: #238a9e;
-	$color-primary-darker-rgb: rgb(35,138,158);
+	$color-primary: #a5e200;
+	$color-primary-rgb: rgb(165,226,0);
+	$color-primary-darker: #88ba00;
+	$color-primary-darker-rgb: rgb(136,186,0);
 
 	$color-text-primary: #ffffff;
 	$color-text-primary-rgb: rgb(255,255,255);
@@ -39,14 +39,14 @@
 	$color-text: #5b5b5b;
 	$color-text-light: #979797;
 
-	$color-link: #2eb6d1;
-	$color-link-hover: #238a9e;
+	$color-link: #a5e200;
+	$color-link-hover: #88ba00;
 
 	// Main element colors
-	$color-bg-main: #ffffff;
+	$color-bg-main: #f0f4dc;
 	$color-border: #dddddd;
-	$color-background: #f7f7f7;
-
+	// $color-background: #f7f7f7;
+	$color-background: #f0f4dc;
 
 
 
