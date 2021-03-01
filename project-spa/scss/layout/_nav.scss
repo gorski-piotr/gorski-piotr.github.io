@@ -1,4 +1,11 @@
-.nav {
+.nav-fixed {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 15px 0;
+}
+
+.nav-items {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,13 +13,12 @@
 }
 
 .ul-nav {
-    display: flex;
-    list-style-type: none; //remove markers from menu items
+    display: none;
+    list-style-type: none; //removes markers from menu items
 }
 
 .li-nav {
     padding: 20px;
-    
 }
 
 .li-nav a {
@@ -26,8 +32,6 @@
     width: auto;
 }
 
-
-
 .button-close {
     display: none;
 }
@@ -36,72 +40,63 @@
     color: $primary-color;
     font-size: $primary-font-size * 3;
     cursor: pointer;
+    position: fixed;
+    top: 30px;
+    right: 30px;
 }
-    
-@media (max-width: $large) {
-    .mobile-menu {
-        display: none;
-    }
-    
+ 
+
+
+
+@media (max-width: $large - 1) {
     //class to toggle menu
-.open {
-    align-items: flex-start;
-    padding-right: 0;
-
-
-    //mobile-menu styling:
-    .mobile-menu {
-        background-color: $primary-color;
-        position: absolute;
-        right: -23px;
-        z-index: 0;
-        padding-top: 50px;
-        text-align: right;
-    }
-    .li-nav a {
-        font-weight: 400;
-        font-size: $primary-font-size * 2;
-        color: white;
-    }
-
-
-
-    .menu-button {
-        margin-top: 20px;
-        z-index: 10;
-    }
-
-    .mobile-menu {
-        display: inline-block;
-
-        .ul-nav {
-            display: block;
+    .open {
+    
+        //mobile-menu styling:
+        .mobile-menu {
+            background-color: $primary-color;
+            padding-top: 65px;
+            padding-right: 10px;
+            text-align: right;
+            position: fixed;
+            top: 0;
+            right: 0;
+    
+            .ul-nav {
+                display: block;
+            }
+        }
+    
+        .li-nav a {
+            font-weight: 400;
+            font-size: $primary-font-size * 2;
+            color: white;
+        }
+            
+        //menu buttons toggle
+        .button-hamburger {
+            display: none;
+            
+        }
+        .button-close {
+            display: inline-block;
+            color: white;
         }
     }
-
-
-
-    //menu buttons toggle
-    .button-hamburger {
-        display: none;
-        
-    }
-    .button-close {
-        display: inline-block;
-        color: white;
-    }
 }
 
 
-
-}
 
 @media (min-width: $large) {
     .menu-button {
         display: none;
     }
 
-    .nav {
+    .nav-items {
         justify-content: left;
+    }
+
+    .ul-nav {
+        display: flex;
     }
 }
