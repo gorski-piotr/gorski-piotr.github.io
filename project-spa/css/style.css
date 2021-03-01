@@ -1,3 +1,7 @@
+/* Fonts */
+/* Colors */
+/* Container */
+/* Mobile breakpoints */
 article,
 aside,
 details,
@@ -232,5 +236,33 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #888888;
+}
+
+.container {
+  max-width: 100%;
+  width: 100%;
+  padding: 0 23px;
+  margin: 0 auto;
+}
+
+@media all and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
