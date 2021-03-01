@@ -14,13 +14,14 @@ body {
     margin: 0 auto;
 }
 
-@media all and (min-width: $large) {
+
+@media (min-width: $large) {
     .container {
         max-width: $large-container;
     }
 }
 
-@media all and (min-width: $extra-large) {
+@media (min-width: $extra-large) {
     .container {
         max-width: $extra-large-container;
     }

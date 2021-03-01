@@ -254,15 +254,83 @@ body {
   margin: 0 auto;
 }
 
-@media all and (min-width: 992px) {
+@media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
 }
 
-@media all and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .container {
     max-width: 1140px;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ul-nav {
+  display: flex;
+  list-style-type: none;
+}
+
+.li-nav {
+  padding: 20px;
+}
+
+.li-nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.small-logo-txt {
+  height: 80px;
+  width: auto;
+}
+
+.open .mobile-menu {
+  display: inline-block;
+}
+
+.open .mobile-menu .ul-nav {
+  display: block;
+}
+
+.open .button-hamburger {
+  display: none;
+}
+
+.open .button-close {
+  display: inline-block;
+  color: pink;
+}
+
+.button-close {
+  display: none;
+}
+
+.menu-button {
+  color: #1ba4ce;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu-button {
+    display: none;
+  }
+  .nav {
+    justify-content: left;
   }
 }
 /*# sourceMappingURL=style.css.map */

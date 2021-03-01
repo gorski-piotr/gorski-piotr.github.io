@@ -1,0 +1,75 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ul-nav {
+    display: flex;
+    list-style-type: none; //remove markers from menu items
+}
+
+.li-nav {
+    padding: 20px;
+    
+}
+
+.li-nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.small-logo-txt {
+    height: 80px;
+    width: auto;
+}
+
+//class to toggle menu
+.open {
+    .mobile-menu {
+        display: inline-block;
+
+        .ul-nav {
+            display: block;
+        }
+    }
+
+
+
+    //menu buttons toggle
+    .button-hamburger {
+        display: none;
+        
+    }
+    .button-close {
+        display: inline-block;
+        color: pink;
+    }
+}
+
+.button-close {
+    display: none;
+}
+
+.menu-button {
+    color: $primary-color;
+    font-size: $primary-font-size * 3;
+    cursor: pointer;
+}
+    
+@media (max-width: $large) {
+    .mobile-menu {
+        display: none;
+    }   
+}
+
+@media (min-width: $large) {
+    .menu-button {
+        display: none;
+    }
+
+    .nav {
+        justify-content: left;
+    }
+}
