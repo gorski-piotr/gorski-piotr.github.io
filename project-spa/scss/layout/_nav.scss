@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .ul-nav {
@@ -27,6 +28,33 @@
 
 //class to toggle menu
 .open {
+    align-items: flex-start;
+    //justify-content: left;
+
+
+    //mobile-menu styling:
+    .mobile-menu {
+        background-color: $primary-color;
+        position: absolute;
+        right: 0;
+        padding-right: 0;
+        z-index: 0;
+        padding-top: 50px;
+        text-align: right;
+    }
+    .li-nav a {
+        font-weight: 400;
+        font-size: $primary-font-size * 2;
+        color: white;
+    }
+
+
+
+    .menu-button {
+        margin-top: 20px;
+        z-index: 10;
+    }
+
     .mobile-menu {
         display: inline-block;
 
@@ -44,7 +72,7 @@
     }
     .button-close {
         display: inline-block;
-        color: pink;
+        color: white;
     }
 }
 
