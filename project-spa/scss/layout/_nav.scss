@@ -3,6 +3,7 @@
     position: fixed;
     top: 0;
     padding: 15px 0;
+    background-color: white;
 }
 
 .nav-items {
@@ -52,8 +53,8 @@
     //class to toggle menu
     .open {
     
-        //mobile-menu styling:
-        .mobile-menu {
+        //mobile menu styling:
+        .menu {
             background-color: $primary-color;
             padding-top: 65px;
             padding-right: 10px;

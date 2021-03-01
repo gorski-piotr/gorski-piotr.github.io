@@ -271,6 +271,7 @@ body {
   position: fixed;
   top: 0;
   padding: 15px 0;
+  background-color: white;
 }
 
 .nav-items {
@@ -314,7 +315,7 @@ body {
 }
 
 @media (max-width: 991px) {
-  .open .mobile-menu {
+  .open .menu {
     background-color: #1ba4ce;
     padding-top: 65px;
     padding-right: 10px;
@@ -323,7 +324,7 @@ body {
     top: 0;
     right: 0;
   }
-  .open .mobile-menu .ul-nav {
+  .open .menu .ul-nav {
     display: block;
   }
   .open .li-nav a {
@@ -350,5 +351,9 @@ body {
   .ul-nav {
     display: flex;
   }
+}
+
+.test {
+  margin-top: 150px;
 }
 /*# sourceMappingURL=style.css.map */
