@@ -250,11 +250,16 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Bellota", cursive;
+  color: #473452;
 }
 
 a,
 button {
   transition: all 0.5s;
+}
+
+section {
+  padding: 80px 0;
 }
 
 .container {
@@ -366,9 +371,9 @@ button {
 }
 
 .main-header .main-header-content {
-  padding-top: 140px;
+  padding-top: 170px;
   background-color: transparent;
-  height: 600px;
+  height: 700px;
 }
 
 .main-header .main-header-content .header-description, .main-header .main-header-content h1 {
@@ -438,7 +443,7 @@ button {
 .main-header .header-flowers {
   position: absolute;
   left: 0;
-  top: 180px;
+  top: 220px;
   max-width: 8%;
   z-index: -1;
 }
@@ -452,8 +457,36 @@ button {
   }
 }
 
+.about .container {
+  text-align: center;
+  max-width: 850px;
+}
+
+.about .container .about-logo {
+  width: 100px;
+}
+
+.about .container .about-spa {
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #473452;
+}
+
+.about .container h2 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.about .container .about-content {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 26px;
+}
+
 .btn-primary,
-.btn-primary:focus,
+.btn-primary:link,
 .btn-primary:visited {
   padding: 14px 20px;
   background-color: #1ba4ce;
@@ -461,8 +494,8 @@ button {
 }
 
 .btn-primary:hover, .btn-primary:active,
-.btn-primary:focus:hover,
-.btn-primary:focus:active,
+.btn-primary:link:hover,
+.btn-primary:link:active,
 .btn-primary:visited:hover,
 .btn-primary:visited:active {
   background-color: #30383b;
@@ -470,9 +503,48 @@ button {
 }
 
 .btn-primary a,
-.btn-primary:focus a,
+.btn-primary:link a,
 .btn-primary:visited a {
   text-decoration: none;
   color: white;
+}
+
+.btn:link, .btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: all 0.2s;
+  margin-right: 15px;
+  text-transform: uppercase;
+}
+
+.btn-first {
+  color: #fff;
+}
+
+.btn-first:link, .btn-first:visited {
+  background-color: #1ba4ce;
+  border: 1px solid #1ba4ce;
+}
+
+.btn-first:hover, .btn-first:active {
+  background-color: #30383b;
+  border: 1px solid #30383b;
+}
+
+.btn-second {
+  color: #fff;
+}
+
+.btn-second:link, .btn-second:visited {
+  background-color: #30383b;
+  border: 1px solid #30383b;
+}
+
+.btn-second:hover, .btn-second:active {
+  background-color: #1ba4ce;
+  border: 1px solid #1ba4ce;
 }
 /*# sourceMappingURL=style.css.map */
