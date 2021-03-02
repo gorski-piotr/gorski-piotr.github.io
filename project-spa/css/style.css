@@ -300,7 +300,7 @@ body {
 }
 
 .small-logo-txt {
-  height: 80px;
+  height: 90px;
   width: auto;
 }
 
@@ -376,6 +376,7 @@ body {
 .main-header .main-header-content h1 {
   font-size: 51px;
   color: #1e2528;
+  margin: 40px 0;
 }
 
 .main-header .main-header-content .header-content {
@@ -383,12 +384,36 @@ body {
   color: #555555;
 }
 
+.main-header .main-header-content .buttons-div {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.main-header .main-header-content .buttons-div .btn-primary {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.main-header .main-header-content .buttons-div .btn-watch {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+}
+
+.main-header .main-header-content .buttons-div .btn-watch .play-icon {
+  font-size: xx-large;
+  margin-right: 5px;
+}
+
 .main-header .header-bg {
   position: absolute;
   top: 0;
   right: 0;
   z-index: 10000;
-  max-width: 35%;
+  max-width: 37%;
   display: none;
 }
 
@@ -407,5 +432,25 @@ body {
   .main-header-content {
     max-width: 65%;
   }
+}
+
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:visited {
+  padding: 14px 20px;
+  background-color: #1ba4ce;
+  border: 1px solid #1ba4ce;
+  transition: all 0.5s;
+}
+
+.btn-primary a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: #30383b;
+  border-color: #30383b;
 }
 /*# sourceMappingURL=style.css.map */

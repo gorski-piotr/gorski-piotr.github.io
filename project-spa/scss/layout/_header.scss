@@ -19,6 +19,7 @@
         h1 {
             font-size: 51px;
             color: $main-header-color;
+            margin: 40px 0;
         }
 
         .header-content {
@@ -26,20 +27,36 @@
             color: $secondary-text-color;
         }
 
+        .buttons-div {
 
+            @include flexbox;
+            margin-top: 40px;
 
-    
+            .btn-primary {
+                margin-right: 10px;
+                margin-bottom: 10px;
+            }
 
+            .btn-watch {
+                @include flexbox;
+                align-items: center;
+                border: none;
+                background-color: transparent;
+
+                .play-icon {
+                    font-size: xx-large;
+                    margin-right: 5px;
+                }
+            }
+        }
     }
-
-
 
     .header-bg {
         position: absolute;
         top: 0;
         right: 0;
         z-index: 10000;
-        max-width: 35%;
+        max-width: 37%;
         display: none;
     }
 
@@ -64,7 +81,4 @@
     .main-header-content {
         max-width: 65%;
     }
-
-
-
 }
