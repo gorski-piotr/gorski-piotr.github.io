@@ -7,13 +7,22 @@ body {
     color: $primary-text-color;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: $secondary-font;
+}
+
+a,
+button {
+    transition: all 0.5s;
+}
+
+
 .container {
     max-width: $small-container;
     width: $small-container;
     padding: 0 23px;
     margin: 0 auto;
 }
-
 
 @media (min-width: $large) {
     .container {

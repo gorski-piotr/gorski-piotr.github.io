@@ -6,14 +6,15 @@
         height: 600px;
 
         .header-description, h1 {
-            font-family: $secondary-font;
             font-weight: 700;
             color: $secondary-color;
         }
 
         .header-description {
+            font-family: $secondary-font;
             font-size: $primary-font-size + 4;
             text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         h1 {
@@ -37,6 +38,12 @@
             .btn-primary {
                 margin: 10px 10px 10px 0;
                 
+            }
+
+            @media (max-width: $extra-small) {
+                .btn-primary {
+                    margin-right: 0;
+                }
             }
 
             .btn-watch {
@@ -85,3 +92,5 @@
         max-width: 65%;
     }
 }
+
+

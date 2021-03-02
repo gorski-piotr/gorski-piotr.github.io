@@ -248,6 +248,15 @@ body {
   color: #888888;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bellota", cursive;
+}
+
+a,
+button {
+  transition: all 0.5s;
+}
+
 .container {
   max-width: 100%;
   width: 100%;
@@ -363,14 +372,15 @@ body {
 }
 
 .main-header .main-header-content .header-description, .main-header .main-header-content h1 {
-  font-family: "Bellota", cursive;
   font-weight: 700;
   color: #473452;
 }
 
 .main-header .main-header-content .header-description {
+  font-family: "Bellota", cursive;
   font-size: 16px;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .main-header .main-header-content h1 {
@@ -394,6 +404,12 @@ body {
 
 .main-header .main-header-content .buttons-div .btn-primary {
   margin: 10px 10px 10px 0;
+}
+
+@media (max-width: 480px) {
+  .main-header .main-header-content .buttons-div .btn-primary {
+    margin-right: 0;
+  }
 }
 
 .main-header .main-header-content .buttons-div .btn-watch {
@@ -442,17 +458,21 @@ body {
   padding: 14px 20px;
   background-color: #1ba4ce;
   border: 1px solid #1ba4ce;
-  transition: all 0.5s;
 }
 
-.btn-primary a {
-  text-decoration: none;
-  color: white;
-}
-
-.btn-primary:hover,
-.btn-primary:active {
+.btn-primary:hover, .btn-primary:active,
+.btn-primary:focus:hover,
+.btn-primary:focus:active,
+.btn-primary:visited:hover,
+.btn-primary:visited:active {
   background-color: #30383b;
   border-color: #30383b;
+}
+
+.btn-primary a,
+.btn-primary:focus a,
+.btn-primary:visited a {
+  text-decoration: none;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
