@@ -1,11 +1,36 @@
 .main-header {
 
     .main-header-content {
-        padding-top: 120px;
-        //background-color: pink;
-        height: 80vh;
-    }
+        padding-top: $fixed-nav-height + 20;
+        background-color: transparent;
+        height: 600px;
 
+        .header-description, h1 {
+            font-family: $secondary-font;
+            font-weight: 700;
+            color: $secondary-color;
+        }
+
+        .header-description {
+            font-size: $primary-font-size + 4;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: 51px;
+            color: $main-header-color;
+        }
+
+        .header-content {
+            font-size: $primary-font-size + 4;
+            color: $secondary-text-color;
+        }
+
+
+
+    
+
+    }
 
 
 
@@ -21,7 +46,7 @@
     .header-flowers {
         position: absolute;
         left: 0;
-        top: 200px;
+        top: $fixed-nav-height + 60;
         max-width: 8%;
         z-index: -1;
     }
@@ -35,4 +60,11 @@
             display: block;
         }
     }
+
+    .main-header-content {
+        max-width: 65%;
+    }
+
+
+
 }
