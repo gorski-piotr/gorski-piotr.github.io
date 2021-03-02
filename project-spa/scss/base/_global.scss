@@ -12,6 +12,15 @@ h1, h2, h3, h4, h5, h6 {
     color: $secondary-color;
 }
 
+h2 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.5;
+}
+
 a,
 button {
     transition: all 0.5s;

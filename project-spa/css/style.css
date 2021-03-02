@@ -253,6 +253,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #473452;
 }
 
+h2 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.5;
+}
+
 a,
 button {
   transition: all 0.5s;
@@ -473,15 +482,9 @@ section {
   color: #473452;
 }
 
-.about .container h2 {
-  font-size: 42px;
-  font-weight: 700;
-}
-
 .about .container .about-content {
   font-size: 16px;
   font-weight: 300;
-  line-height: 1.5;
   margin-bottom: 26px;
 }
 
