@@ -387,12 +387,13 @@ body {
 .main-header .main-header-content .buttons-div {
   display: flex;
   flex-wrap: wrap;
+  height: fit-content;
+  align-items: center;
   margin-top: 40px;
 }
 
 .main-header .main-header-content .buttons-div .btn-primary {
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin: 10px 10px 10px 0;
 }
 
 .main-header .main-header-content .buttons-div .btn-watch {
@@ -401,6 +402,7 @@ body {
   align-items: center;
   border: none;
   background-color: transparent;
+  padding: 10px;
 }
 
 .main-header .main-header-content .buttons-div .btn-watch .play-icon {

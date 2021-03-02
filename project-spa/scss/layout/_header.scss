@@ -30,11 +30,13 @@
         .buttons-div {
 
             @include flexbox;
+            height: fit-content;
+            align-items: center;
             margin-top: 40px;
 
             .btn-primary {
-                margin-right: 10px;
-                margin-bottom: 10px;
+                margin: 10px 10px 10px 0;
+                
             }
 
             .btn-watch {
@@ -42,6 +44,7 @@
                 align-items: center;
                 border: none;
                 background-color: transparent;
+                padding: 10px;
 
                 .play-icon {
                     font-size: xx-large;
