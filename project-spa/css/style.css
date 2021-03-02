@@ -272,6 +272,7 @@ body {
   top: 0;
   padding: 15px 0;
   background-color: white;
+  z-index: 9999;
 }
 
 .nav-items {
@@ -353,7 +354,31 @@ body {
   }
 }
 
-.test {
-  margin-top: 150px;
+.main-header .main-header-content {
+  padding-top: 120px;
+  height: 80vh;
+}
+
+.main-header .header-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10000;
+  max-width: 35%;
+  display: none;
+}
+
+.main-header .header-flowers {
+  position: absolute;
+  left: 0;
+  top: 200px;
+  max-width: 8%;
+  z-index: -1;
+}
+
+@media (min-width: 992px) {
+  .main-header .header-bg {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */

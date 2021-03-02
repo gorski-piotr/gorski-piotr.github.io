@@ -1,0 +1,38 @@
+.main-header {
+
+    .main-header-content {
+        padding-top: 120px;
+        //background-color: pink;
+        height: 80vh;
+    }
+
+
+
+
+    .header-bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 10000;
+        max-width: 35%;
+        display: none;
+    }
+
+    .header-flowers {
+        position: absolute;
+        left: 0;
+        top: 200px;
+        max-width: 8%;
+        z-index: -1;
+    }
+
+}
+
+
+@media (min-width: $large) {
+    .main-header {
+        .header-bg {
+            display: block;
+        }
+    }
+}
