@@ -639,6 +639,8 @@ section {
   padding: 20px;
   border: solid 1px rgba(148, 148, 148, 0.5);
   text-align: center;
+  margin-top: 20px;
+  flex-basis: 100%;
 }
 
 @media (min-width: 768px) {
