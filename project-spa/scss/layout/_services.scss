@@ -2,7 +2,8 @@
     
     .services-wrapper {
         @include flexbox;
-        width: 100%;
+        
+       // width: 100%;
 
         .services-item {
             flex-basis: 100%;
@@ -15,7 +16,6 @@
 
             @media (min-width: $medium) {
                 flex-basis: 50%;
-                height: 300px;
             }
 
             @media (min-width: $large) {
@@ -37,6 +37,7 @@
                 width: 100%;
                 background-color: $services-hover-color;
                 opacity: 0;
+                transition: all 0.5s;
                 
                 &:hover {
                     opacity: 1;

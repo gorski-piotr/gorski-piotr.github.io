@@ -31,7 +31,7 @@
         .buttons-div {
 
             @include flexbox;
-            height: fit-content;
+            //height: auto;
             align-items: center;
             margin-top: 40px;
 

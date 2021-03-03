@@ -9,10 +9,10 @@
 }
 
 .nav-items {
-    display: flex;
+    @include flexbox;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    //position: relative;
 }
 
 .ul-nav {
@@ -43,9 +43,10 @@
     color: $primary-color;
     font-size: $primary-font-size * 3;
     cursor: pointer;
-    position: fixed;
-    top: 30px;
-    right: 30px;
+    position: relative; //fixed usunieta
+    //top: 30px;
+    //right: 30px;
+    margin-right: 15px;
 }
  
 

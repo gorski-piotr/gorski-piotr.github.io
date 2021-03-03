@@ -302,9 +302,9 @@ section {
 
 .nav-items {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  position: relative;
 }
 
 .ul-nav {
@@ -335,9 +335,8 @@ section {
   color: #1ba4ce;
   font-size: 36px;
   cursor: pointer;
-  position: fixed;
-  top: 30px;
-  right: 30px;
+  position: relative;
+  margin-right: 15px;
 }
 
 @media (max-width: 991px) {
@@ -411,7 +410,6 @@ section {
 .main-header .main-header-content .buttons-div {
   display: flex;
   flex-wrap: wrap;
-  height: fit-content;
   align-items: center;
   margin-top: 40px;
 }
@@ -491,7 +489,6 @@ section {
 .services .services-wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
 }
 
 .services .services-wrapper .services-item {
@@ -509,7 +506,6 @@ section {
 @media (min-width: 768px) {
   .services .services-wrapper .services-item {
     flex-basis: 50%;
-    height: 300px;
   }
 }
 
@@ -533,6 +529,7 @@ section {
   width: 100%;
   background-color: rgba(27, 164, 206, 0.5);
   opacity: 0;
+  transition: all 0.5s;
 }
 
 .services .services-wrapper .services-item .services-hidden:hover {
