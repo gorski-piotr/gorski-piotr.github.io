@@ -1,0 +1,39 @@
+footer {
+    .footer-wrapper {
+
+        @include flexbox;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 100px;
+            
+        }
+
+        .ul-nav {
+            margin: 20px auto;
+            padding: 0;
+            @media (max-width: $small - 1) {
+                display: block;
+            }
+
+            @media (min-width: $small) {
+                display: flex;
+            }
+
+            .li-nav {
+                text-align: center;
+                padding: 10px;
+            }
+
+        }
+
+        p.copyright {
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+    
+    }
+    
+    
+}
