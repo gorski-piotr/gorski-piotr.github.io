@@ -1,48 +1,29 @@
-.procedures {
-    .container {
-        .header-procedures {
-            
-            text-align: center;
-            
-            .header-procedures-description {
-                margin: 30px auto;
 
-                @media (min-width: $medium) {
-                    width: 60%;
-                }
-            }
-        }
+//NOT NEEDED ANYMORE. _three-columns-section created instead
 
-        .procedures-content {
-            @include flexbox;
-            justify-content: space-between;
+// .procedures {
+//     .container {
+//         .procedures-content {
+//             @include flexbox;
+//             justify-content: space-between;
 
-            .procedures-content-item {
+//             .procedures-content-item {
                 
-                padding: 20px;
-                border: solid 1px rgba(148, 148, 148, 0.5);
-                text-align: center;
+//                 padding: 20px;
+//                 border: solid 1px rgba(148, 148, 148, 0.5);
+//                 text-align: center;
 
-                @media (min-width: $small) {
-                    flex-basis: 33%;
-                }
+//                 @media (min-width: $medium) {
+//                     flex-basis: 32%;
+//                 }
 
-                @media (min-width: $medium) {
-                    flex-basis: 30%;
-                }
+//                 img {
+//                     width: 100%;
+//                 }
 
-                img {
-                    width: 100%;
-                }
+                
+//             }
+//         }
+//     }
+// }
 
-                p.procedures-description {
-                    margin: 30px 0;
-                }
-
-            }
-
-        }
-
-
-    }
-}

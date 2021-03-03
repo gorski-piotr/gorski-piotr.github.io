@@ -552,52 +552,6 @@ section {
   width: 50px;
 }
 
-.procedures .container .header-procedures {
-  text-align: center;
-}
-
-.procedures .container .header-procedures .header-procedures-description {
-  margin: 30px auto;
-}
-
-@media (min-width: 768px) {
-  .procedures .container .header-procedures .header-procedures-description {
-    width: 60%;
-  }
-}
-
-.procedures .container .procedures-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.procedures .container .procedures-content .procedures-content-item {
-  padding: 20px;
-  border: solid 1px rgba(148, 148, 148, 0.5);
-  text-align: center;
-}
-
-@media (min-width: 576px) {
-  .procedures .container .procedures-content .procedures-content-item {
-    flex-basis: 33%;
-  }
-}
-
-@media (min-width: 768px) {
-  .procedures .container .procedures-content .procedures-content-item {
-    flex-basis: 30%;
-  }
-}
-
-.procedures .container .procedures-content .procedures-content-item img {
-  width: 100%;
-}
-
-.procedures .container .procedures-content .procedures-content-item p.procedures-description {
-  margin: 30px 0;
-}
-
 .btn-primary,
 .btn-primary:link,
 .btn-primary:visited {
@@ -659,5 +613,45 @@ section {
 .btn-second:hover, .btn-second:active {
   background-color: #1ba4ce;
   border: 1px solid #1ba4ce;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-header .section-header-description {
+  margin: 30px auto;
+}
+
+@media (min-width: 768px) {
+  .section-header .section-header-description {
+    width: 60%;
+  }
+}
+
+.col-3-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-3-section .col-3-item {
+  padding: 20px;
+  border: solid 1px rgba(148, 148, 148, 0.5);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .col-3-section .col-3-item {
+    flex-basis: 32%;
+  }
+}
+
+.col-3-section .col-3-item img {
+  width: 100%;
+}
+
+.col-3-section .col-3-item p.col-3-description {
+  margin: 30px 0;
 }
 /*# sourceMappingURL=style.css.map */

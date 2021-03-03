@@ -1,0 +1,11 @@
+.section-header {
+    text-align: center;
+
+    .section-header-description {
+        margin: 30px auto;
+
+        @media (min-width: $medium) {
+            width: 60%;
+        }
+    }
+}
