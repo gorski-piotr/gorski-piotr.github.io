@@ -1,0 +1,25 @@
+.procedures {
+    .container {
+        .header-procedures {
+            
+            text-align: center;
+            
+            .header-procedures-description {
+                margin: 30px auto;
+                width: 60%;
+            }
+        }
+
+        .procedures-content {
+            @include flexbox;
+            justify-content: space-between;
+
+            .procedures-content-item {
+                flex-basis: 30%;
+            }
+
+        }
+
+
+    }
+}

@@ -555,6 +555,25 @@ section {
   width: 50px;
 }
 
+.procedures .container .header-procedures {
+  text-align: center;
+}
+
+.procedures .container .header-procedures .header-procedures-description {
+  margin: 30px auto;
+  width: 60%;
+}
+
+.procedures .container .procedures-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.procedures .container .procedures-content .procedures-content-item {
+  flex-basis: 30%;
+}
+
 .btn-primary,
 .btn-primary:link,
 .btn-primary:visited {
