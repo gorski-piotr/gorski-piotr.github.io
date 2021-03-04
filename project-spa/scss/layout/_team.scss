@@ -1,0 +1,19 @@
+.team {
+    .container {
+        .col-3-section {
+            .col-3-item {
+                padding: 0;
+                border: none;
+                position: relative;
+
+                .team-content {
+                    position: absolute;
+                    //left: 0;
+                    //right: 0;
+                    bottom: -50px;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}

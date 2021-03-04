@@ -590,6 +590,28 @@ footer .footer-wrapper p.copyright {
   margin-bottom: 30px;
 }
 
+.blog .container .col-3-section .col-3-item .post-details {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 20px 0 30px 0;
+}
+
+.blog .container .col-3-section .col-3-item h3 {
+  font-size: 22px;
+}
+
+.team .container .col-3-section .col-3-item {
+  padding: 0;
+  border: none;
+  position: relative;
+}
+
+.team .container .col-3-section .col-3-item .team-content {
+  position: absolute;
+  bottom: -50px;
+  background-color: white;
+}
+
 .btn-primary,
 .btn-primary:link,
 .btn-primary:visited {
@@ -679,6 +701,10 @@ footer .footer-wrapper p.copyright {
   text-align: center;
   margin-top: 20px;
   flex-basis: 100%;
+}
+
+.col-3-section .col-3-item:hover {
+  box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.1), -5px -5px 5px rgba(128, 128, 128, 0.1);
 }
 
 @media (min-width: 768px) {

@@ -10,6 +10,10 @@
         margin-top: 20px;
         flex-basis: 100%;
 
+        &:hover {
+            box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.1), -5px -5px 5px rgba(128, 128, 128, 0.1);
+        }
+
         @media (min-width: $medium) {
             flex-basis: 32%;
         }
