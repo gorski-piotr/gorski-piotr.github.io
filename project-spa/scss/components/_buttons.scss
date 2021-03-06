@@ -64,3 +64,26 @@
         border: 1px solid $primary-color;
     }
 }
+
+/**  BUTTON TYPE SUBMIT  **/ 
+button[type=submit] {
+        display: inline-block;
+        padding: 10px 30px;
+        font-weight: 700;
+        text-decoration: none;
+        border-radius: 200px;
+        transition: all 0.2s;
+        margin-right: 15px;
+        text-transform: uppercase;
+
+        background-color: white;
+        border: 1px solid white;
+        color: $secondary-color;
+
+        &:hover,
+        &:active {
+            background-color: $button-color;
+            border: 1px solid $button-color;
+            color: white;
+        }
+}

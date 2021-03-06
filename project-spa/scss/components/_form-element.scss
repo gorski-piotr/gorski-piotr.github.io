@@ -1,0 +1,13 @@
+.form-element {
+    background-color: $primary-color;
+    text-transform: uppercase;
+    margin: 20px 0;
+    color: white;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid white;
+
+    &::placeholder {
+        color:white;
+    }
+}

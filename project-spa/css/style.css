@@ -685,21 +685,45 @@ footer .footer-wrapper p.copyright {
   object-fit: cover;
 }
 
-@media (min-width: 992px) {
-  .appointment .background-image {
-    display: flex;
-  }
-}
-
 .appointment #appointment-form {
   padding: 80px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.appointment #appointment-form #name,
+.appointment #appointment-form #mail,
+.appointment #appointment-form #select-service,
+.appointment #appointment-form #phone,
+.appointment #appointment-form #date,
+.appointment #appointment-form #time {
+  flex-basis: 100%;
+}
+
+.appointment #appointment-form #message {
+  width: 100%;
+  height: 100px;
+}
+
+.appointment #appointment-form button {
+  margin-top: 40px;
 }
 
 @media (min-width: 992px) {
+  .appointment .background-image {
+    display: flex;
+  }
   .appointment #appointment-form {
     flex-basis: 70%;
+  }
+  .appointment #appointment-form #name,
+  .appointment #appointment-form #mail,
+  .appointment #appointment-form #select-service,
+  .appointment #appointment-form #phone,
+  .appointment #appointment-form #date,
+  .appointment #appointment-form #time {
+    flex-basis: 49%;
   }
 }
 
@@ -766,6 +790,27 @@ footer .footer-wrapper p.copyright {
   border: 1px solid #1ba4ce;
 }
 
+/**  BUTTON TYPE SUBMIT  **/
+button[type=submit] {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: all 0.2s;
+  margin-right: 15px;
+  text-transform: uppercase;
+  background-color: white;
+  border: 1px solid white;
+  color: #473452;
+}
+
+button[type=submit]:hover, button[type=submit]:active {
+  background-color: #30383b;
+  border: 1px solid #30383b;
+  color: white;
+}
+
 .section-header {
   text-align: center;
 }
@@ -810,5 +855,19 @@ footer .footer-wrapper p.copyright {
 
 .col-3-section .col-3-item p.col-3-description {
   margin: 30px 0;
+}
+
+.form-element {
+  background-color: #1ba4ce;
+  text-transform: uppercase;
+  margin: 20px 0;
+  color: white;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+.form-element::placeholder {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

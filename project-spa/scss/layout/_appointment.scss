@@ -2,6 +2,7 @@
     background-color: $primary-color;
     padding: 0;
     @include flexbox;
+    
 
     .background-image {
         display: none;
@@ -15,21 +16,48 @@
         }
     }
 
+    #appointment-form {
+        padding: 80px;
+        @include flexbox;
+        justify-content: space-between;
+
+        #name, 
+        #mail,
+        #select-service,
+        #phone,
+        #date,
+        #time {
+            flex-basis: 100%;
+        }
+
+        #message {
+            width: 100%;
+            height: 100px;
+        }
+
+        button {
+           margin-top: 40px;
+        }
+
+    }
+
     @media (min-width: $large) {
+
         .background-image {
             display: flex;
         }
-    }
 
-    #appointment-form {
-        padding: 80px;
-        
-        @include flexbox;
-    }
-
-    @media (min-width: $large) {
         #appointment-form {
             flex-basis: 70%;
+
+            #name, 
+            #mail,
+            #select-service,
+            #phone,
+            #date,
+            #time {
+                flex-basis: 49%;
+            }
         }
     }
 }
