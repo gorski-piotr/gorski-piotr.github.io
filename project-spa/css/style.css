@@ -600,16 +600,71 @@ footer .footer-wrapper p.copyright {
   font-size: 22px;
 }
 
+.team {
+  padding-bottom: 120px;
+}
+
+@media (max-width: 768px) {
+  .team .container .col-3-section .col-3-item:nth-child(2),
+  .team .container .col-3-section .col-3-item:nth-child(3) {
+    margin-top: 60px;
+  }
+}
+
 .team .container .col-3-section .col-3-item {
   padding: 0;
   border: none;
   position: relative;
+  box-shadow: none;
 }
 
 .team .container .col-3-section .col-3-item .team-content {
   position: absolute;
-  bottom: -50px;
+  left: 30px;
+  right: 30px;
+  bottom: -70px;
   background-color: white;
+  transition: all 0.5s;
+}
+
+.team .container .col-3-section .col-3-item .team-content:hover {
+  bottom: -40px;
+  box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.1);
+}
+
+.team .container .col-3-section .col-3-item .team-content:hover .team-social-media {
+  visibility: visible;
+}
+
+.team .container .col-3-section .col-3-item .team-content .team-social-media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+  visibility: hidden;
+}
+
+.team .container .col-3-section .col-3-item .team-content .team-social-media .social-media-cirle {
+  width: 40px;
+  height: 40px;
+  border: solid 1px;
+  border-radius: 50%;
+  line-height: 40px;
+  font-size: x-large;
+  cursor: pointer;
+}
+
+.team .container .col-3-section .col-3-item .team-content .team-social-media .social-media-cirle:hover {
+  background-color: #1ba4ce;
+  color: white;
+}
+
+.contact {
+  background-color: #1ba4ce;
+}
+
+.appointment {
+  background-color: #1ba4ce;
 }
 
 .btn-primary,
