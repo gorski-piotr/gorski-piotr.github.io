@@ -19,7 +19,7 @@ footer {
             }
 
             @media (min-width: $small) {
-                display: flex;
+                @include flexbox;
             }
 
             .li-nav {

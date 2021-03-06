@@ -581,6 +581,7 @@ footer .footer-wrapper .ul-nav {
 @media (min-width: 576px) {
   footer .footer-wrapper .ul-nav {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -680,6 +681,7 @@ footer .footer-wrapper p.copyright {
 
 .appointment .background-image img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
