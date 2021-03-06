@@ -1,4 +1,5 @@
 footer {
+    padding: 60px;
     .footer-wrapper {
 
         @include flexbox;
@@ -29,7 +30,6 @@ footer {
 
         p.copyright {
             margin-top: 0;
-            margin-bottom: 30px;
         }
     
     }

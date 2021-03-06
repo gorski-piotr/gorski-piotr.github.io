@@ -224,7 +224,23 @@
 <!-- SECTION APPOINTMENT -->
 
     <section class="appointment" id="appointment">
-        <h2>Appointment section is going to be build here.</h2>
+        <div class="background-image">
+            <img src="img/contact-bg.jpg" alt="Appointment background">
+        </div>
+        <form id="appointment-form">
+            <input type="text" name="name" id="name" placeholder="Name">
+            <input type="email" name="mail" id="mail" placeholder="Email">
+            <select id="select-service" name="select-service">
+                <option value="select-service" selected>Select service</option>
+                <option value="normal-service">Normal service</option>
+                <option value="vip-service">VIP service</option>
+            </select>
+            <input type="tel" name="phone" id="phone" placeholder="Phone">
+            <input type="date" id="date" name="date">
+            <input type="time" id="time" name="time">
+            <textarea maxlength="1000" name="message" id="message" placeholder="Your notes"></textarea>
+            <button type="submit" form="form1" value="Submit">Make an appointment</button>
+        </form>
     </section>
 
 
