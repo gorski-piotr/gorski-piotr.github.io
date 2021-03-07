@@ -665,6 +665,83 @@ footer .footer-wrapper p.copyright {
 
 .contact {
   background-color: #1ba4ce;
+  color: white;
+}
+
+.contact .header-contact {
+  text-align: center;
+}
+
+.contact .header-contact h2 {
+  color: white;
+}
+
+.contact .contact-wrapper {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact .contact-wrapper .contact-data {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contact .contact-wrapper .contact-data .contact-item {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.contact .contact-wrapper .contact-data .contact-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact .contact-wrapper .contact-data .contact-item .img-holder {
+  flex-basis: 30%;
+  padding-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.contact .contact-wrapper .contact-data .contact-item .img-holder img {
+  width: 30px;
+}
+
+.contact .contact-wrapper .contact-data .contact-item p {
+  flex-basis: 70%;
+}
+
+.contact .contact-wrapper #contact-form {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.contact .contact-wrapper #contact-form #name,
+.contact .contact-wrapper #contact-form #mail,
+.contact .contact-wrapper #contact-form #message {
+  flex-basis: 100%;
+}
+
+.contact .contact-wrapper #contact-form #message {
+  height: 100px;
+}
+
+@media (min-width: 768px) {
+  .contact .contact-wrapper .contact-data {
+    flex-basis: 40%;
+  }
+  .contact .contact-wrapper #contact-form {
+    flex-basis: 60%;
+  }
 }
 
 .appointment {

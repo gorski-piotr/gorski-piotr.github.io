@@ -1,3 +1,80 @@
 .contact {
     background-color: $primary-color;
+    color: white;
+    
+
+    .header-contact {
+        text-align: center;
+        h2 {
+            color: white;
+        }
+    }
+
+    .contact-wrapper {
+        margin-top: 60px;
+        @include flexbox;
+
+        .contact-data {
+            flex-basis: 100%;
+            @include flexbox;
+            align-items: center;
+
+            .contact-item {
+                flex-basis: 100%;
+                @include flexbox;
+                align-items: center;
+                text-transform: uppercase;
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+                
+                
+
+                .img-holder {
+                    flex-basis: 30%;
+                    padding-right: 20px; 
+                    @include flexbox;
+                    justify-content: flex-end;
+                    
+
+                    img {
+                        width: 30px;
+                        
+                    }
+                }
+
+                p {
+                    flex-basis: 70%;
+                }
+            }
+
+        }
+
+        #contact-form {
+            flex-basis: 100%;
+            @include flexbox;
+            padding: 0 20px;
+
+            #name,
+            #mail,
+            #message {
+                flex-basis: 100%;
+            }
+
+            #message {
+                height: 100px;
+            }
+        }
+
+        @media (min-width: $medium) {
+            .contact-data {
+                flex-basis: 40%;
+            }
+    
+            #contact-form {
+                flex-basis: 60%;
+            }
+        }
+    }
 }
