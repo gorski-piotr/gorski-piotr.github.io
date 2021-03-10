@@ -787,6 +787,10 @@ footer .footer-wrapper p.copyright {
   margin-top: 40px;
 }
 
+.appointment #appointment-form .appointment-message {
+  width: 100%;
+}
+
 @media (min-width: 992px) {
   .appointment .background-image {
     display: flex;
@@ -945,6 +949,22 @@ button[type=submit]:hover, button[type=submit]:active {
 }
 
 .form-element::placeholder {
+  color: white;
+}
+
+.error {
+  color: red;
+}
+
+.error.form-element {
+  border-bottom: 1px solid red;
+}
+
+.error::placeholder {
+  color: red;
+}
+
+.send {
   color: white;
 }
 /*# sourceMappingURL=style.css.map */

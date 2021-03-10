@@ -6,6 +6,7 @@ let firstAgree = document.getElementById("first-agree");
 let secondAgree = document.getElementById("second-agree");
 
 const validate = (event) => {
+    //event.preventDefault();
 
     let fullName = document.getElementById("full-name");
     let eMail = document.getElementById("mail");
@@ -55,7 +56,10 @@ const validate = (event) => {
 }
 
 newsletterForm.addEventListener("submit", validate);
-allAgreeCheckbox.addEventListener("change", function() {
+allAgreeCheckbox.addEventListener("change", function(event) {
+
+    console.log(event);
+
     if (this.checked) {
         firstAgree.checked = true;
         secondAgree.checked = true;

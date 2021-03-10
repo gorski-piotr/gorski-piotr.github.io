@@ -1,0 +1,17 @@
+.error {
+    
+    color: red;
+
+    &.form-element {
+        border-bottom: 1px solid red;
+    }
+    
+
+    &::placeholder {
+        color:red;
+    }
+}
+
+.send {
+    color: white;
+}
