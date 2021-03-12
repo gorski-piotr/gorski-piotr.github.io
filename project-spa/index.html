@@ -228,7 +228,7 @@
             <img src="img/contact-bg.jpg" alt="Appointment background">
         </div>
         <form id="appointment-form" method="POST">
-            <input type="text" name="name" id="name" placeholder="Name" class="form-element error">
+            <input type="text" name="name" id="name" placeholder="Name" class="form-element">
             <input type="email" name="mail" id="mail" placeholder="Email" class="form-element">
             <select id="select-service" name="select-service" class="form-element">
                 <option value="" selected>Select service</option>
@@ -238,9 +238,9 @@
             <input type="tel" name="phone" id="phone" placeholder="Phone" class="form-element">
             <input type="date" id="date" name="date" class="form-element">
             <input type="time" id="time" name="time" class="form-element">
-            <textarea maxlength="1000" name="message" id="message" placeholder="Your notes" class="form-element"></textarea>
+            <textarea maxlength="1000" name="notes" id="notes" placeholder="Your notes" class="form-element"></textarea>
             <button type="submit">Make an appointment</button>
-            <p class="appointment-message error">Please fill in all the required fields.</p>
+            <p class="appointment-message"></p>
         </form>
     </section>
 
