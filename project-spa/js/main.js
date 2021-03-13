@@ -8,7 +8,9 @@ menuButton.addEventListener('click', function() {
 
 //APPOINTMENT FORM VALIDATION
 
-document.getElementById('appointment-form').addEventListener('submit', function(event) {
+let appointmentForm = document.getElementById('appointment-form');
+
+appointmentForm.addEventListener('submit', function(event) {
     event.preventDefault();
     console.log('submit button pressed');
 
@@ -83,8 +85,41 @@ document.getElementById('appointment-form').addEventListener('submit', function(
     time.value.trim() !== '' &&
     notes.value.trim() !== ''
     ) {
-        appointmentMessage.innerText = 'Your message has been sent!';
-        appointmentMessage.classList.add("send");
-        appointmentMessage.style.display='inline';
+
+        //IF ALL THE FIELDS ARE FILLED IN CORRECTLY THEN SEND DATA TO API
+        let appointmentRequest = {
+            name: name.value.trim(), 
+            email: mail.value.trim(),
+            service: selectService.value.trim(),
+            phone: phone.value.trim(),
+            date: date.value.trim(),
+            time: time.value.trim(),
+            message: notes.value.trim()
+        };
+
+        fetch(`https://akademia108.pl/api/ajax/post-appointment.php`, {
+            headers: {
+                'Content-Type': 'application/json', 
+            },
+            mode: 'cors', // it is a DEFAULT VALUE
+            method: 'POST',
+    
+            body: JSON.stringify(appointmentRequest)
+        })
+            .then(res => res.json())
+            .then(resJSON => {
+                console.log(resJSON);
+                console.log(resJSON.appointment.name);
+    
+                if (!resJSON.errors) {
+                    appointmentMessage.classList.add("send");
+                    appointmentMessage.style.display='inline';
+                    appointmentMessage.innerText = `Dziękujemy ${resJSON.appointment.name}. Zostałeś zapisany!`;
+                    appointmentForm.reset();
+                }
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
     }
 });
