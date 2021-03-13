@@ -114,7 +114,7 @@ appointmentForm.addEventListener('submit', function(event) {
                 if (!resJSON.errors) {
                     appointmentMessage.classList.add("send");
                     appointmentMessage.style.display='inline';
-                    appointmentMessage.innerText = `Dziękujemy ${resJSON.appointment.name}. Zostałeś zapisany!`;
+                    appointmentMessage.innerText = `Thank you ${resJSON.appointment.name}. Your enquiry has been sent!`;
                     appointmentForm.reset();
                 }
             })
