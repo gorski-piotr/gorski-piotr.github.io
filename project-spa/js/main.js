@@ -8,21 +8,21 @@ menuButton.addEventListener('click', function() {
 
 //APPOINTMENT FORM VALIDATION
 
-let appointmentForm = document.getElementById('appointment-form');
+const appointmentForm = document.getElementById('appointment-form');
 
 appointmentForm.addEventListener('submit', function(event) {
     event.preventDefault();
     console.log('submit button pressed');
 
-    let name = document.getElementById('name');
-    let mail = document.getElementById('mail');
-    let selectService = document.getElementById('select-service');
-    let phone = document.getElementById('phone');
-    let date = document.getElementById('date');
-    let time = document.getElementById('time');
-    let notes = document.getElementById('notes');
+    const name = document.getElementById('name');
+    const mail = document.getElementById('mail');
+    const selectService = document.getElementById('select-service');
+    const phone = document.getElementById('phone');
+    const date = document.getElementById('date');
+    const time = document.getElementById('time');
+    const notes = document.getElementById('notes');
 
-    let appointmentMessage = document.querySelector('.appointment-message');
+    const appointmentMessage = document.querySelector('.appointment-message');
 
     function errorMessage() {
         appointmentMessage.innerText = 'Please fill in all the required fields.';
@@ -78,12 +78,12 @@ appointmentForm.addEventListener('submit', function(event) {
     }
 
     if (name.value.trim() !== '' &&
-    mail.value.trim() !== '' &&
-    selectService.value.trim() !== '' &&
-    phone.value.trim() !== '' &&
-    date.value.trim() !== '' &&
-    time.value.trim() !== '' &&
-    notes.value.trim() !== ''
+        mail.value.trim() !== '' &&
+        selectService.value.trim() !== '' &&
+        phone.value.trim() !== '' &&
+        date.value.trim() !== '' &&
+        time.value.trim() !== '' &&
+        notes.value.trim() !== ''
     ) {
 
         //IF ALL THE FIELDS ARE FILLED IN CORRECTLY THEN SEND DATA TO API
