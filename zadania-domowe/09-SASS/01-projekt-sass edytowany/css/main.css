@@ -5963,6 +5963,7 @@ select[multiple].form-group-lg .form-control {
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
+  transition: all 0.5s;
 }
 
 .btn:focus,
@@ -11834,11 +11835,11 @@ form fieldset input[name="comment"], form fieldset input[name="message"] {
   border-radius: 100%;
   line-height: 72px;
   border: 2px solid #a5e200;
+  transition: all 0.5s;
 }
 
 .t108-one-page #counters-services .icon-services:hover {
   transform: rotate(45deg);
-  transition: all 0.5s;
 }
 
 .t108-one-page #counters-services .counters-box {
