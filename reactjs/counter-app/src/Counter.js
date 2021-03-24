@@ -17,31 +17,48 @@ class Counter extends Component {
   }
 
   changeValue = (action) => {
-    if (action === "add") {
-      this.setState((prevState) => {
-        return {
-          counterValue: prevState.counterValue + 1,
-        };
+    let currentCounterValue = this.state.counterValue;
 
-        // mozna przekazac obiekt zamiast funkcji:
-        // this.setState({
-        //counterValue: this.state.counterValue + 1
-        //});
-      });
+    if (action === "add") {
+      currentCounterValue += 1;
     } else if (action === "reinit") {
-      this.setState(() => {
-        return {
-          counterValue: this.props.initValue,
-        };
-      });
+      currentCounterValue = this.props.initValue;
     } else if (action === "reset") {
-      this.setState(() => {
-        return {
-          counterValue: 0,
-        };
-      });
+      currentCounterValue = 0;
     }
+
+    this.setState({
+      counterValue: currentCounterValue,
+    });
   };
+
+  //   first method:
+  //   changeValue = (action) => {
+  //     if (action === "add") {
+  //       this.setState((prevState) => {
+  //         return {
+  //           counterValue: prevState.counterValue + 1,
+  //         };
+
+  //         // mozna przekazac obiekt zamiast funkcji:
+  //         // this.setState({
+  //         //counterValue: this.state.counterValue + 1
+  //         //});
+  //       });
+  //     } else if (action === "reinit") {
+  //       this.setState(() => {
+  //         return {
+  //           counterValue: this.props.initValue,
+  //         };
+  //       });
+  //     } else if (action === "reset") {
+  //       this.setState(() => {
+  //         return {
+  //           counterValue: 0,
+  //         };
+  //       });
+  //     }
+  //   };
 
   render() {
     return (
