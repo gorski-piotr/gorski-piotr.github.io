@@ -9,8 +9,6 @@ function App() {
       </header>
       <Counter initValue={0} />
       <Counter initValue={108} />
-      <Counter />
-      <Counter />
     </div>
   );
 }
