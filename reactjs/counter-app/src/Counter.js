@@ -16,21 +16,45 @@ class Counter extends Component {
     //this.changeValue = this.changeValue.bind(this);
   }
 
+  //third method (the best). setState przyjmuje 2 parametry i przekazujemy funkcje a nie obiekt
+
   changeValue = (action) => {
-    let currentCounterValue = this.state.counterValue;
+    this.setState((prevState, prevProps) => {
+      let currentCounterValue = prevState.counterValue;
 
-    if (action === "add") {
-      currentCounterValue += 1;
-    } else if (action === "reinit") {
-      currentCounterValue = this.props.initValue;
-    } else if (action === "reset") {
-      currentCounterValue = 0;
-    }
-
-    this.setState({
-      counterValue: currentCounterValue,
+      if (action === "add") {
+        currentCounterValue += 1;
+      } else if (action === "reinit") {
+        currentCounterValue = prevProps.initValue;
+      } else if (action === "reset") {
+        currentCounterValue = 0;
+      }
+      return {
+        counterValue: currentCounterValue,
+      };
     });
   };
+
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  // second method: (w naszym przypadku dziala ale by sie moglo pomieszac jak 2 przyciski klikniete szybko)
+  //   changeValue = (action) => {
+  //     let currentCounterValue = this.state.counterValue;
+
+  //     if (action === "add") {
+  //       currentCounterValue += 1;
+  //     } else if (action === "reinit") {
+  //       currentCounterValue = this.props.initValue;
+  //     } else if (action === "reset") {
+  //       currentCounterValue = 0;
+  //     }
+
+  //     this.setState({ //do metody setState przekazujemy obiekt a nie funkcje
+  //       counterValue: currentCounterValue,
+  //     });
+  //   };
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   //   first method:
   //   changeValue = (action) => {
