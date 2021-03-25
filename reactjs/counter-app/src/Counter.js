@@ -86,12 +86,24 @@ class Counter extends Component {
   //     }
   //   };
 
+  toggleClock = () => {
+    this.setState((prevState) => {
+      return {
+        showClock: !prevState.showClock,
+      };
+    });
+  };
+
   render() {
-    let clockElement = "";
+    let clockElement;
     if (this.state.showClock) {
-      clockElement = <Clock />;
+      clockElement = <Clock toggleClockMethod={this.toggleClock} />;
     } else {
-      clockElement = <span className="show-clock">Show clock</span>;
+      clockElement = (
+        <span onClick={this.toggleClock} className="show-clock">
+          Show clock
+        </span>
+      );
     }
 
     return (
