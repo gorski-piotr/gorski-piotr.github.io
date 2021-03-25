@@ -3,6 +3,7 @@ import "./Counter.css";
 import Display from "./Display";
 import ButtonsPanel from "./ButtonsPanel";
 import Clock from "./Clock";
+import Step from "./Step";
 
 //Komponent klasowy:
 class Counter extends Component {
@@ -12,6 +13,7 @@ class Counter extends Component {
     this.state = {
       counterValue: this.props.initValue,
       showClock: true,
+      step: 5,
     };
 
     //jesli metoda changeValue() napisana w ES5 to trzeba zbindowac:
@@ -30,6 +32,8 @@ class Counter extends Component {
         currentCounterValue = prevProps.initValue;
       } else if (action === "reset") {
         currentCounterValue = 0;
+      } else if (action === "add-step") {
+        console.log("add-step: " + this.state.step);
       }
       return {
         counterValue: currentCounterValue,
@@ -112,8 +116,9 @@ class Counter extends Component {
         {/* <span className="value">{this.state.counterValue}</span> */}
         <Display displayValue={this.state.counterValue} />
         {/* <button onClick={this.changeValue}>Add 1</button> */}
-        <ButtonsPanel buttonMethod={this.changeValue} />
+        <ButtonsPanel buttonMethod={this.changeValue} step={this.state.step} />
         {clockElement}
+        <Step />
       </div>
     );
   }

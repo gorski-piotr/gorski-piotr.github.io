@@ -26,6 +26,13 @@ function ButtonsPanel(props) {
       >
         Reset
       </button>
+      <button
+        onClick={() => {
+          props.buttonMethod("add-step");
+        }}
+      >
+        Add step: {props.step}
+      </button>
     </div>
   );
 }
