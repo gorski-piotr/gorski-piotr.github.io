@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Counter.css";
 import Display from "./Display";
 import ButtonsPanel from "./ButtonsPanel";
+import Clock from "./Clock";
 
 //Komponent klasowy:
 class Counter extends Component {
@@ -10,6 +11,7 @@ class Counter extends Component {
 
     this.state = {
       counterValue: this.props.initValue,
+      showClock: true,
     };
 
     //jesli metoda changeValue() napisana w ES5 to trzeba zbindowac:
@@ -85,6 +87,13 @@ class Counter extends Component {
   //   };
 
   render() {
+    let clockElement = "";
+    if (this.state.showClock) {
+      clockElement = <Clock />;
+    } else {
+      clockElement = <span className="show-clock">Show clock</span>;
+    }
+
     return (
       <div className="counter">
         Counter:
@@ -92,6 +101,7 @@ class Counter extends Component {
         <Display displayValue={this.state.counterValue} />
         {/* <button onClick={this.changeValue}>Add 1</button> */}
         <ButtonsPanel buttonMethod={this.changeValue} />
+        {clockElement}
       </div>
     );
   }
