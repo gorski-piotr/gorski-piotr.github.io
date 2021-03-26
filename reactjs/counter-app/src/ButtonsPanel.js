@@ -31,7 +31,7 @@ function ButtonsPanel(props) {
           props.buttonMethod("add-step");
         }}
       >
-        Add step: {props.step}
+        Add step: {props.stepValue}
       </button>
     </div>
   );
