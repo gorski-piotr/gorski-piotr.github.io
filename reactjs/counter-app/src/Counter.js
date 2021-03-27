@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import "./Counter.css";
 import Display from "./Display";
 import ButtonsPanel from "./ButtonsPanel";
-import Clock from "./Clock";
+// import Clock from "./Clock";
+import ClockFunctional from "./ClockFunctional";
 import Step from "./Step";
 
 //Komponent klasowy:
@@ -108,7 +109,10 @@ class Counter extends Component {
   render() {
     let clockElement;
     if (this.state.showClock) {
-      clockElement = <Clock toggleClockMethod={this.toggleClock} />;
+      clockElement = (
+        // <Clock toggleClockMethod={this.toggleClock} />
+        <ClockFunctional toggleClockMethod={this.toggleClock} />
+      );
     } else {
       clockElement = (
         <span onClick={this.toggleClock} className="show-clock">
@@ -129,8 +133,8 @@ class Counter extends Component {
         />
         {clockElement}
         <Step
-          stepUpdadeMethod={this.stepUpdate}
-          currentValue={this.state.stepValue}
+          stepUpdateMethod={this.stepUpdate}
+          stepValue={this.state.stepValue}
         />
       </div>
     );

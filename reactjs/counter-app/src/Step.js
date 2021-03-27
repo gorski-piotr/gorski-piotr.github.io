@@ -22,10 +22,10 @@ export default class Step extends Component {
             this._inputStep = data;
           }}
           //   onChange={this.stepUpdateMethod}
-          onChange={() => this.props.stepUpdadeMethod(this._inputStep.value)}
+          onChange={() => this.props.stepUpdateMethod(this._inputStep.value)}
           type="number"
           min="1"
-          value={this.props.currentValue}
+          value={this.props.stepValue}
         />
       </div>
     );
